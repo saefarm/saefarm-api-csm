@@ -7,7 +7,7 @@ from domain.farmland import farmland_router
 api = FastAPI()
 
 origins = [
-    "http://127.0.0.1:5173" # Streamlit
+    "http://127.0.0.1:8501"  # Streamlit
 ]
 
 api.add_middleware(
@@ -23,4 +23,4 @@ api.include_router(farmland_router.router)
 
 
 if __name__ == "__main__":
-    uvicorn.run("main:api")
+    uvicorn.run("main:api", reload=True)
