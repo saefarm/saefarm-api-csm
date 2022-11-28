@@ -1,4 +1,4 @@
-/CSM/
-/Weather/
-/agriweahter_points.csv
 /config.ini
+/alembic.ini
+.idea
+farmland.db
